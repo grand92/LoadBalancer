@@ -53,7 +53,7 @@ public class ComplexLoadBalancerShould {
     }
 
     private Host createHostWithLoad(int load) {
-        Host host = new Host(RandomStringUtils.randomAlphanumeric(10));
+        Host host = new Host();
         host.getReceivedRequests().addAll(Collections.nCopies(load, new Request(RandomStringUtils.randomAlphanumeric(5))));
         return host;
     }

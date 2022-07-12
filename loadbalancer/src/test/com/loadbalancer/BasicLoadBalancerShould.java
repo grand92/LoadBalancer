@@ -14,8 +14,8 @@ class BasicLoadBalancerShould {
 
         // given
         ArrayList<Host> hostList = new ArrayList<>();
-        hostList.add(new Host("HOST1"));
-        hostList.add(new Host("HOST2"));
+        hostList.add(new Host());
+        hostList.add(new Host());
 
         LoadBalancer loadBalancer = new LoadBalancer(hostList, new BasicBalanceStrategy());
 
