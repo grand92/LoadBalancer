@@ -2,7 +2,7 @@ package com.loadbalancer;
 
 public class Request {
 
-    private String message;
+    private final String message;
 
     public Request(String message) {
         this.message = message;

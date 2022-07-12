@@ -1,14 +1,13 @@
 package com.loadbalancer;
 
 import com.loadbalancer.balanceStrategy.BalanceStrategy;
-import com.loadbalancer.balanceStrategy.BasicBalanceStrategy;
 
 import java.util.ArrayList;
 
 public class LoadBalancer {
 
-    private ArrayList<Host> hosts;
-    private BalanceStrategy strategy;
+    private final ArrayList<Host> hosts;
+    private final BalanceStrategy strategy;
 
     public LoadBalancer(ArrayList<Host> hosts, BalanceStrategy strategy) {
         this.hosts = hosts;
